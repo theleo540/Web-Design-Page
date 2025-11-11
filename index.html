@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Péchés Sucrés - Pâtisserie Française | Colonia Nápoles, CDMX</title>
+    <meta name="description" content="Repostería francesa artesanal en el corazón de la Colonia Nápoles, Ciudad de México. Productos elaborados con técnicas tradicionales francesas y los mejores ingredientes.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo-container" >
+                <img src="assets/img/6JjxvXM-removebg-preview.png" alt="Péchés Sucrés - Pâtisserie Française" class="logo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"  >
+            </div>
+            
+            <nav class="nav">
+                <button onclick="scrollToSection('inicio')" class="nav-link">Inicio</button>
+                <button onclick="scrollToSection('productos')" class="nav-link">Productos</button>
+                <button onclick="scrollToSection('nosotros')" class="nav-link">Nosotros</button>
+                <button onclick="scrollToSection('ubicacion')" class="nav-link">Ubicación</button>
+                <button onclick="scrollToSection('contacto')" class="btn btn-primary">Contacto</button>
+            </nav>
+
+
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1562079859-ef41b665a46d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVuY2glMjBwYXN0cmllcyUyMGJha2VyeXxlbnwxfHx8fDE3NjIxODgzOTR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Pastelería francesa" class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <h2 class="hero-title">El Arte de la Repostería Francesa</h2>
+                <p class="hero-subtitle">Tradición francesa en el corazón de la Colonia Nápoles</p>
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('productos')" class="btn btn-primary btn-lg">Ver Productos</button>
+                    <button onclick="scrollToSection('contacto')" class="btn btn-outline btn-lg">Contáctanos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="productos" class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestras Especialidades</h2>
+                    <p class="section-description">
+                        Elaboramos cada pieza con ingredientes de la más alta calidad y técnicas tradicionales francesas
+                    </p>
+                </div>
+
+                <!-- Imagen destacada de chocolate -->
+                <div class="featured-product">
+                    <div class="card card-hover">
+                        <div class="featured-product-image-container">
+                            <img src="https://i.imgur.com/WNCD3uy.jpg" alt="Colección de productos de chocolate de Péchés Sucrés" class="featured-product-image">
+                            <div class="featured-product-overlay">
+                                <div class="featured-product-text">
+                                    <h3 class="featured-product-title">Nuestra Pasión por el Chocolate</h3>
+                                    <p class="featured-product-description">
+                                        Descubre nuestra exquisita selección de creaciones de chocolate artesanal
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/kMhykBA.jpg" alt="Gourmandise de Chocolat" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Gourmandise de Chocolat</h3>
+                            <p class="product-description">Exquisito pastel de chocolate belga con capas de mousse sedosa y ganache oscuro</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/SYcy69W.jpg" alt="Framboisier" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Framboisier</h3>
+                            <p class="product-description">Delicado bizcocho de almendra con crema mousseline y frambuesas frescas</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/RgvTM0F.jpg" alt="Éclair" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Éclair</h3>
+                            <p class="product-description">Clásico éclair relleno de crema pastelera y cubierto con fondant brillante</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/p92gOMI.jpg" alt="Gâteau aux Fruits" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Gâteau aux Fruits</h3>
+                            <p class="product-description">Pastel de frutas de temporada con crema ligera y glaseado natural</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://lh3.googleusercontent.com/proxy/JReBfAbIBCCwM3zb0dkfMyqQuBCDIrzmsDl13YX00y5rN3e6YkTaOSMsizOYkiOdvAzGW5KXimCW4UbMVxpiTPTSHr1aEd789V4yx8DOTBIyz0J4PCULYOepo4_58lwlVIdg-w" alt="Gâteau aux Pistaches" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Gâteau aux Pistaches</h3>
+                            <p class="product-description">Exquisito pastel de pistache con crema de almendras</p>
+			    	
+                        </div>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/lZd7gXL.jpg" alt="Tarte aux Figues" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Tarte aux Figues</h3>
+                            <p class="product-description">Tarta artesanal de higos con crema de mascarpone y miel</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 7 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/zzUh9sk.jpg" alt="Tarte à la Pêche" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Tarte à la Pêche</h3>
+                            <p class="product-description">Tarta de durazno con crema pastelera y glaseado de albaricoque</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 8 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/7e633Bx.jpg" alt="Roulette au Chocolat" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Roulette au Chocolat</h3>
+                            <p class="product-description">Rollo suizo de chocolate relleno de crema chantilly</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 9 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/r8Mb00D.jpg" alt="Praline au Chocolat" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Praline au Chocolat</h3>
+                            <p class="product-description">Bombones de chocolate rellenos de praliné de avellana</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 10 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/6IYyUn5.jpg" alt="Banoffee" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Banoffee</h3>
+                            <p class="product-description">Tarta inglesa de plátano, dulce de leche y crema batida</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 11 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/4nlXna8.jpg" alt="Ischels" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Ischels</h3>
+                            <p class="product-description">Galletas vienesas rellenas de mermelada y cubiertas de chocolate</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 12 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/nK01PyM.jpg" alt="Choco Chips" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Choco Chips</h3>
+                            <p class="product-description">Galletas con chispas de chocolate belga horneadas al momento</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 13 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/3zbULUC.jpg" alt="Brownie" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Brownie</h3>
+                            <p class="product-description">Brownie húmedo de chocolate oscuro con nueces</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 14 -->
+                    <div class="card card-hover">
+                        <div class="product-image-container">
+                            <img src="https://i.imgur.com/MuiKCeI.jpg" alt="Berlinois" class="product-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="product-name">Berlinois</h3>
+                            <p class="product-description">Donas alemanas rellenas de crema pastelera y azúcar glas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="nosotros" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div>
+                        <h2 class="about-title">Nuestra Historia</h2>
+                        <p class="about-text">
+                            Péchés Sucrés nace de la pasión por la repostería francesa y el amor por México. 
+                            Ubicados en la emblemática Colonia Nápoles, combinamos las técnicas tradicionales 
+                            de la pâtisserie francesa con el sabor y calidez mexicana.
+                        </p>
+                        <p class="about-text">
+                            Cada mañana, nuestros maestros pasteleros elaboran artesanalmente cada pieza, 
+                            desde croissants hojaldrados hasta delicados macarons, utilizando mantequilla 
+                            francesa y los mejores ingredientes locales.
+                        </p>
+
+                        <div class="features-grid">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+                                        <circle cx="12" cy="8" r="6"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Calidad</h3>
+                                <p class="feature-description">Ingredientes premium</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Pasión</h3>
+                                <p class="feature-description">Hecho con amor</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Tradición</h3>
+                                <p class="feature-description">Recetas auténticas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image-wrapper">
+                        <div class="about-image-container">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Interior de la pastelería" class="about-image">
+                        </div>
+                        <div class="experience-badge">
+                            <p class="experience-number">10+</p>
+                            <p class="experience-text">Años de experiencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="ubicacion" class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Visítanos</h2>
+                    <p class="section-description">
+                        Estamos en el corazón de la Colonia Nápoles
+                    </p>
+                </div>
+
+                <div class="location-grid">
+                    <div class="location-info">
+                        <!-- Dirección -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="info-title">Dirección</h3>
+                                        <p class="info-text">
+                                            C. Nueva York 132 A<br>
+                                            Nápoles<br>
+                                            03810 Ciudad de México, CDMX
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Horario -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <polyline points="12 6 12 12 16 14"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="info-title">Horario</h3>
+                                        <div class="info-text">
+                                            <p>Lunes: 10:00 AM - 7:00 PM</p>
+                                            <p>Martes: Cerrado</p>
+                                            <p>Miércoles a Domingo: 9:00 AM - 8:30 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contacto -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="info-title">Contacto</h3>
+                                        <div class="info-text">
+                                            <p>Tel: 55 6318 9052</p>
+                                            <p>WhatsApp: (55) 6318-9052</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="info-title">Email</h3>
+                                        <p class="info-text">
+                                            info@pechessucres.com.mx
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9876543!2d-99.1709824!3d19.4026785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff7d7f8e7b7d%3A0x7a7a7a7a7a7a7a7a!2sC.%20Nueva%20York%20132%20A%2C%20N%C3%A1poles%2C%20Benito%20Ju%C3%A1rez%2C%2003810%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1730649600000"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="section-description">
+                        ¿Tienes alguna pregunta o quieres hacer un pedido especial? 
+                        Estamos aquí para ayudarte
+                    </p>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <div class="card">
+                        <div class="card-content card-content-lg">
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" id="email" name="email" placeholder="tu@email.com" required class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono" placeholder="55 6318 9052" required class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte..." required class="form-textarea"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg btn-full" alert="¡Mensaje enviado! Nos pondremos en contacto pronto.">
+                                    Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <div class="footer-icon">🥐</div>
+                        <div>
+                            <h3 class="footer-brand-name">Péchés Sucrés</h3>
+                            <p class="footer-brand-subtitle">Pâtisserie Française</p>
+                        </div>
+                    </div>
+                    <p class="footer-text">
+                        Repostería francesa artesanal en el corazón de la Ciudad de México
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Horario</h3>
+                    <div class="footer-info">
+                        <p>Lunes: 10:00 AM - 7:00 PM</p>
+                        <p>Martes: Cerrado</p>
+                        <p>Mié - Dom: 9:00 AM - 8:30 PM</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Contacto</h3>
+                    <div class="footer-info">
+                        <p>Tel: 55 6318 9052</p>
+                        <p>WhatsApp: (55) 6318-9052</p>
+                        <p>info@pechessucres.com.mx</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Péchés Sucrés. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <p id="toast-message"></p>
+    </div>
+
+    <script>
+        // Smooth scroll function
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success toast
+            showToast('¡Mensaje enviado! Nos pondremos en contacto pronto.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Toast notification
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            
+            toastMessage.textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(function() {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
