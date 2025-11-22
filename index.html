@@ -97,7 +97,36 @@
         </section>
 
 
+        <!-- Hero Section SOLO MÓVIL -->
+        <section id="inicio" class="d-block d-md-none">
 
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1562079859-ef41b665a46d?auto=format&w=1200"
+                     class="hero-image" alt="Pastelería francesa">
+                <div class="hero-overlay"></div>
+            </div>
+
+        </section>
+
+
+        <script>
+            let lastScroll = 0;
+
+            window.addEventListener("scroll", function () {
+                const currentScroll = window.pageYOffset;
+                const header = document.querySelector("header");
+
+                if (currentScroll < lastScroll) {
+                    // Scroll hacia ARRIBA → mostrar header
+                    header.classList.add("header-visible");
+                } else {
+                    // Scroll hacia ABAJO → ocultar header
+                    header.classList.remove("header-visible");
+                }
+
+                lastScroll = currentScroll;
+            });
+        </script>
 
         <!-- Products Section -->
         <section id="productos" class="section section-gray">
